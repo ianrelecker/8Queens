@@ -21,7 +21,8 @@ public static int checkOne(int[] array){
         return total;
     }
     public static int randNumF(){
-        return (int) Math.round(Math.random()* 7);
+        Random num = new Random();
+        return num.Next(0,8);
     }
     public static void Main(string[] args){
         Console.WriteLine(randNumF());
